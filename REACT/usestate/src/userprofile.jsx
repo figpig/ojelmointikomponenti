@@ -1,7 +1,7 @@
 import * as React from 'react'
  
 function UserProfile() {
-    const [user, setUser] = React.useState({ name: "John", age: 25 });
+    const [user, setUser] = React.useState({ name: "Topi", age: 17 });
   
     const increaseAge = () => setUser({ ...user, age: user.age + 1 });
   
