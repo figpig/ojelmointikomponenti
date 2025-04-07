@@ -1,20 +1,14 @@
-import * as React from 'react'
+import React from 'react';
 
-function OpiskelijaTiedot() {
-  const opiskelija = { 
-    nimi: "Matti Meikäläinen", 
-    ika: 16, 
-    kurssi: "Reactin perusteet" 
-  }
+const OpiskelijaTiedot = ({ opiskelija }) => {
+    return (
+        <div>
+            <h3>Opiskelijan tiedot</h3>
+            <p>Nimi: {opiskelija.nimi}</p>
+            <p>Ikä: {opiskelija.ika}</p>
+            <p>Kurssi: {opiskelija.kurssi}</p>
+        </div>
+    );
+};
 
-  return (
-    <div>
-      <h2>Opiskelijan tiedot</h2>
-      <p>Nimi: {opiskelija.nimi}</p>
-      <p>Ikä: {opiskelija.ika}</p>
-      <p>Kurssi: {opiskelija.kurssi}</p>
-    </div>
-  )
-}
-
-export default OpiskelijaTiedot
+export default OpiskelijaTiedot;

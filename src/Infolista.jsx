@@ -1,13 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 
-function Infolista({ taulukko }) {
-  return (
-    <ul>
-      {taulukko.map((item, index) => (
-        <li key={index}>{item}</li>
-      ))}
-    </ul>
-  );
-}
+const Infolista = ({ taulukko }) => {
+    return (
+        <ul>
+            {taulukko.map((tieto, index) => (
+                <li key={index}>{tieto}</li>
+            ))}
+        </ul>
+    );
+};
 
 export default Infolista;
