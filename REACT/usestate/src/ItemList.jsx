@@ -1,7 +1,7 @@
 import * as React from 'react'
  
 function ItemList() {
-    const [items, setItems] = React.useState(["Omena", "Banaani", "Kirsikka"]);
+    const [items, setItems] = React.useState(["päärynä", "viinirypäle", "Kirsikka"]);
   
     const removeItem = (itemToRemove) => {
       setItems(items.filter(item => item !== itemToRemove));

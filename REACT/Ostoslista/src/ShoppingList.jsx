@@ -3,7 +3,7 @@ import AddItemForm from './AddItemForm.jsx';
 import ItemList from './ItemList.jsx';
 
 function ShoppingList() {
-  const testi = ["omena", "banaani", "kiivi"]; 
+  const testi = ["päärynä", "viinirypäle", "mango"]; 
   const [items, setItems] = React.useState(testi);
 
   const addItem = (newItem) => {

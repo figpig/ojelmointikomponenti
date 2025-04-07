@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import * as React from 'react'
-import Tervehdys from './tervehdys.jsx'
+import Tervehdys from './Tervehdys.jsx'
 import OpiskelijaTiedot from './OpiskelijaTiedot';
 import Infolista from './infolista.jsx';
 import Linkkilista from './linkkilista.jsx';
@@ -9,7 +9,7 @@ import Kayttajakortti from './Kayttajakortti.jsx';
 
 function App() {
   const [count, setCount] = React.useState(0)
-  const opiskelija = { nimi: "figo la", ika: 17, kurssi: "Ohjelmistokomponentit" };
+  const opiskelija = { nimi: "Toivo Kalliokoski", ika: 17, kurssi: "Ohjelmistokomponentit" };
   const tiedot = ["React", "JavaScript", "CSS"];
   const links = [
     { nimi: "Google", url: "https://www.google.com" },
@@ -33,7 +33,7 @@ function App() {
       <OpiskelijaTiedot opiskelija={opiskelija} />
       <Infolista taulukko={tiedot} />
       <Linkkilista lista={linkit} />
-      <Kayttajakortti nimi="" lista={tiedot} />
+      <Kayttajakortti nimi="FG" lista={tiedot} />
     </>
   )
 }
